@@ -1,0 +1,6 @@
+image: ottowinter/esphomedocs
+ports:
+- port: 8000
+tasks:
+- init: git clone https://github.com/OttoWinter/esphomelib.git /workspace/esphomelib
+  command: make webserver
